@@ -4,38 +4,45 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { navItems } from "@/constants/constants";
 import { SingleNavItem } from "./SingleNavItem";
+import Link from "next/link";
 
 export default function MobileNav() {
     const [isSideMenuOpen, setSideMenu] = useState(false);
-    const closeSideMenu = () => setSideMenu(false);
-    const openSideMenu = () => setSideMenu(true);
+    const toggleSideMenu = () => setSideMenu(!isSideMenuOpen);
 
     return (
-        <section className="h-[calc(100vh-5rem)] fixed left-0 top-0 flex  min-h-screen w-full justify-center md:hidden z-20">
-            <div className="w-full h-full bg-red-500 px-4 py-4">
+        <section className="h-[calc(100vh-5rem)] fixed left-0 top-0 flex min-h-screen w-full justify-center md:hidden">
+            <div className="w-full h-full bg-red-700 text-white px-4 py-4">
                 <section className="flex justify-end">
                     {isSideMenuOpen ? (
-                        <AiOutlineClose onClick={closeSideMenu} className="cursor-pointer text-4xl" />
+                        <AiOutlineClose onClick={toggleSideMenu} className="cursor-pointer text-4xl" />
                     ) : (
-                        <GiHamburgerMenu onClick={openSideMenu} className="cursor-pointer text-4xl" />
+                        <GiHamburgerMenu onClick={toggleSideMenu} className="cursor-pointer text-4xl" />
                     )}
                 </section>
-                <div className="flex flex-col text-[1.1rem] text-white gap-2 transition-all">
-                    {navItems.map((item, index) => (
-                        <SingleNavItem key={index} label={item.label} icon={item.icon} link={item.link}>
-                            {item.children}
-                        </SingleNavItem>
-                    ))}
-                </div>
+                {isSideMenuOpen && (
+                    <div className="flex flex-col p-4 bg-white rounded-lg text-[1.1rem]  gap-2 transition-all mb-16">
+                        {navItems.map((item, index) => (
+                            <SingleNavItem key={index} label={item.label} icon={item.icon} link={item.link} className="text-yellow-800">
+                                {item.children}
+                            </SingleNavItem>
+                        ))}
+                    </div>
+                )}
                 <section className="flex flex-col gap-4 mt-4 items-center">
-                    <button className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 bg-blue-600 text-slate-100 transition-all hover:border-black hover:text-yellow-200">
-                        Call us on: 07686 787 677
-                    </button>
-                    <button className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 bg-red-600 text-slate-100 transition-all hover:border-black hover:text-yellow-200">
+
+                    <Link href={'07686 787 677'}  className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 bg-blue-600 text-slate-100 transition-all hover:text-yellow-200">
+                        Call us on:07686 787 677
+                    </Link>
+                    <Link href={'/contact'} className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 bg-green-600 text-slate-100 transition-all hover:text-yellow-200">
                         Contact us
-                    </button>
+                    </Link>
                 </section>
             </div>
         </section>
     );
 }
+
+
+
+

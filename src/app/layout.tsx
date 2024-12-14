@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import React from "react";
 
 const rufina = Rufina({
-    weight: ['400','700','900'],
+    weight: ['400','700'],
     subsets: ['latin'],
 })
 

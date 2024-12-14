@@ -7,20 +7,19 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-     extend: {
-    backgroundImage: {
-      "hero-bcg": "url('/images/hero.png')",
+    extend: {
+      backgroundImage: {
+        "hero-bcg": "url('/elec-bcg.jpg')",
+      },
+      screens: {
+        xs: "320px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
     },
-    screens: {
-      xs: "320px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
-    },
-
   },
- 
   plugins: [],
 } satisfies Config;
