@@ -1,60 +1,54 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import {IoIosArrowDown} from "react-icons/io";
-import navItems from './constants'
+import { IoIosArrowDown } from "react-icons/io";
 
-export function SingleNavItem(d: navItem) {
-
-
-    
-    const [isItemOpen, setItem] = useState(false);
-const toggleItem = ()=>{
-    return(
-        setItem(true)
-    )
+interface NavItem {
+    label: string;
+    link?: string;
+    icon?: React.ComponentType;
+    children?: NavItem[];
+    className?: string;
 }
- 
-    return (
-        <Link
-            
-            onClick={toggleItem}
-            href={d.link ?? "#"}
-            className="relative px-2 py-3 transition-all "
-        >
-            <p className="flex cursor-pointer items-center gap-2
-       text-neutral-400 group-hover:text-black">
-                <span>{d.label}</span>
-                {d.children && (
-                    // rotate-180
-                    <IoIosArrowDown
-                        className={`text-xs transition-all ${isItemOpen && "rotate-180"}`}
-                    />
-                )}
-            </p>
 
-            {/* dropdown */}
-            {isItemOpen && d.children && (
-                <div className="w-auto flex-col gap-1 rounded-lg bg-white py-3
-          transition-all flex ">
-                    {d.children.map((ch, i) => (
+export function SingleNavItem({ label, link, icon, children, className }: NavItem) {
+    const [isItemOpen, setItem] = useState(false);
+    const toggleItem = () => setItem(!isItemOpen);
+
+    return (
+        <div className={`relative ${className}`}>
+            <Link
+                onClick={toggleItem}
+                href={link ?? "#"}
+                className="relative px-2 py-3 transition-all"
+            >
+                <p className="flex cursor-pointer items-center gap-2 text-neutral-400 group-hover:text-black">
+                    <span>{label}</span>
+                    {children && (
+                        <IoIosArrowDown
+                            className={`text-xs transition-all ${isItemOpen ? "rotate-180" : ""}`}
+                        />
+                    )}
+                </p>
+            </Link>
+
+            {isItemOpen && children && (
+                <div className="w-auto flex-col gap-1 rounded-lg bg-white py-3 transition-all flex">
+                    {children.map((ch, i) => (
                         <Link
                             key={i}
                             href={ch.link ?? "#"}
-                            className="flex cursor-pointer items-center
-                py-1 pl-6 pr-8 text-neutral-400 hover:text-black"
+                            className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-neutral-400 hover:text-black"
                         >
-                            {/* image */}
-                            {ch.icon &&
+                            {ch.icon && (
                                 <span className="h-6 w-6">
-                    <ch.icon />
-                  </span>}
-                            {/* item */}
-                            <span className="whitespace-nowrap pl-3 ">
-                {ch.label}
-              </span>
+                                    <ch.icon />
+                                </span>
+                            )}
+                            <span className="whitespace-nowrap pl-3">{ch.label}</span>
                         </Link>
                     ))}
                 </div>
             )}
-        </Link>
-    )}
+        </div>
+    );
+}

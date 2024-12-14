@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-import { navItems } from "@/constants/constants";
+import { NavItems } from "@/constants/constants";
 import MobileNav from "./MobileNav";
 
 import {
@@ -18,10 +18,10 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdElectricBolt } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-type NavItem = {
+type NavItems = {
   label: string;
   link?: string;
-  children?: NavItem[];
+  children?: NavItems[];
 };
 
 export default function Navbar() {
@@ -47,17 +47,17 @@ export default function Navbar() {
               className="text-white text-2xl
                              font-bold font-serif leading-none"
             >
-              Electric James
+              Electricjay
             </span>
           </div>
           <p className="text-white text-[1rem] font-serif font-medium">
-            Good,Honest,Reliable Electrician
+            Qualified Electrician
           </p>
         </div>
 
         {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
         <div className="hidden md:flex items-center gap-4 transition-all">
-          {navItems.map((d, i) => (
+          {NavItems.map((d, i) => (
             <Link
               key={i}
               href={d.link ?? "#"}

@@ -4,7 +4,7 @@
 import {BoltIcon, BoltSlashIcon, UserPlusIcon} from "@heroicons/react/24/solid";
 import {HomeIcon} from "@heroicons/react/24/outline";
 
-export const navItems = [
+export const NavItems = [
     {
         label: "Home",
         link: "/",
