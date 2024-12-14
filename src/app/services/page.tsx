@@ -17,7 +17,9 @@ export default function Services() {
                         <Link href={servicePageItem.url} key={servicePageItem.id}>
                             <h1 className="hover:scale-y-1.2 flex items-center justify-center text-2xl font-semibold mb-2 h-20 text-blue-900">
                                 {servicePageItem.title}
+
                             </h1>
+                            {servicePageItem.image}
                         </Link>
                     ))}
                 </div>

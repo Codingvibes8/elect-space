@@ -72,16 +72,19 @@ export const servicePageItems = [
         id: 1,
         title: 'Electrical Safety Certificates',
         url: '/services/ElectricalSafetyCertificates',
+        image:'/fuse-wih-man.jpg'
     },
     {
         id: 2,
         title: 'Outdoor Lighting and Heating',
         url: '/services/OutdoorLightingAndHeating',
+        image:'/fuse-wih-man.jpg'
     },
     {
         id: 3,
         title: 'PAT Testing',
         url: '/services/patTest',
+        image:'/fuse-wih-man.jpg'
     },
     {
         id: 4,

@@ -34,19 +34,17 @@ export default function Navbar() {
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-[1536px] justify-between px-4 py-5 text-sm h-20 shadow-md bg-gradient-to-r from-red-700 via-gray-500 to-red-600">
+    <div className="mx-auto flex w-full max-w-[1536px] justify-between px-4 py-5 text-sm h-20 shadow-md bg-gradient-to-r from-green-700 via-green-700 to-red-600">
       {/* left side  */}
       <section className="flex items-center gap-10">
         {/* logo */}
         <div className="flex flex-col items-center justify-center">
-          <div className="flex items-center justify-center space-x-1">
+          <div className="flex items-center justify-center space-x-1 z-10">
             <span>
               <MdElectricBolt className="w-8 h-8 text-red-900 rounded-full bg-white  p-[2px]" />
             </span>
             <span
-              className="text-white text-2xl
-                             font-bold font-serif leading-none"
-            >
+              className="text-white text-3xl font-bold font-serif leading-none" >
               Electricjay
             </span>
           </div>
