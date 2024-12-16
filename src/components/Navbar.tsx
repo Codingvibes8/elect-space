@@ -34,7 +34,8 @@ export default function Navbar() {
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-[1536px] justify-between px-4 py-5 text-sm h-20 shadow-md bg-gradient-to-r from-green-700 via-green-700 to-red-600">
+      <div
+          className="flex max-w-[1536px] mx-auto justify-between px-4 py-5 text-sm h-20 shadow-md bg-gradient-to-r from-green-700 via-green-700 to-red-600">
       {/* left side  */}
       <section className="flex items-center gap-10">
         {/* logo */}

@@ -12,7 +12,7 @@ export const NavItems = [
     },
     {
         label: "About",
-        link: "/",
+        link: "/about",
         icon: UserPlusIcon,
     },
     {
@@ -72,34 +72,36 @@ export const servicePageItems = [
         id: 1,
         title: 'Electrical Safety Certificates',
         url: '/services/ElectricalSafetyCertificates',
-        image:'/fuse-wih-man.jpg'
+        image: '/elec-safety.jpg'
     },
     {
         id: 2,
         title: 'Outdoor Lighting and Heating',
         url: '/services/OutdoorLightingAndHeating',
-        image:'/fuse-wih-man.jpg'
+        image: '/outdoor-light.jpg'
     },
     {
         id: 3,
         title: 'PAT Testing',
         url: '/services/patTest',
-        image:'/fuse-wih-man.jpg'
+        image: '/pat-test.jpg'
     },
     {
         id: 4,
         title: 'Electric Vehicle Charging Installation',
         url: '/services/ElectricVehicleChargingInstallation',
+        image: '/fuse-box1.jpg'
     },
     {
         id: 5,
         title: 'AirConServices',
         url: '/services/AirConServices',
+        image: '/fuse-box1.jpg'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Flood Damage',
-        url: '/services/FloodDamage',
+        url: '/services/FloodDamage', image: '/hero-electric.jpg'
     }
 ]
 

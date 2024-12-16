@@ -3,7 +3,7 @@ import Services from "./services/page";
 
 export default function Home() {
   return (
-    <div className="bg-hero-bcg bg-cover bg-center min-w-full h-full">
+      <div className="bg-hero-bcg bg-cover bg-fixed bg-center max-w-[1536px] mx-auto h-full">
       <Hero/>
         <Services/>
     </div>
