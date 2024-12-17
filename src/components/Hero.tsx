@@ -8,7 +8,7 @@ const Hero = () => {
         <div className='max-w-[1536px] min-h-screen mx-auto'>
             <div className='flex flex-col md:flex-row px-6 pt-10 items-center'>
                 <div
-                    className='flex flex-col items-center bg-gray-600 text-white rounded-2xl h-auto w-full md:w-1/2 p-6 z-10'>
+                    className='flex flex-col items-center text-white rounded-2xl h-auto w-full md:w-1/2 p-6 z-10'>
                     <h1 className='text-6xl md:text-8xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-slate-200'>
                         Electricjay
                     </h1>
@@ -44,10 +44,10 @@ const Hero = () => {
                 <div className='flex items-center justify-center flex-1 p-6 relative'>
                     <Image src='/fuse-box1.jpg' width={500} height={500}
                            className='rounded-2xl object-cover ring-4 ring-yellow-300' alt='Electrician Hero Image'/>
-                    <Image src='/img.png' alt='Top Right Image' width={150} height={100}
+                    <Image src='/img.png' alt='Top Right Image' width={150} height={200}
                            className='absolute top-0 right-0 w-20 h-20'/>
-                    <Image src='/img2.png' alt='Bottom Left Image' width={150} height={100}
-                           className='absolute bottom-0 left-0 w-20 h-20'/>
+                    <Image src='/img_1.png' alt='Bottom Left Image' width={150} height={200}
+                           className='absolute bottom-0 left-0 w-20 h-20 bg-white'/>
                 </div>
             </div>
         </div>

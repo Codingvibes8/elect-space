@@ -1,19 +1,16 @@
+import {HousePlus, Bolt, ContactRound, CircleUserRound} from "lucide-react";
 
-
-
-import {BoltIcon, BoltSlashIcon, UserPlusIcon} from "@heroicons/react/24/solid";
-import {HomeIcon} from "@heroicons/react/24/outline";
 
 export const NavItems = [
     {
         label: "Home",
         link: "/",
-        icon: HomeIcon,
+        icon: HousePlus,
     },
     {
         label: "About",
         link: "/about",
-        icon: UserPlusIcon,
+        icon: ContactRound,
     },
     {
         label: "Services",
@@ -22,43 +19,43 @@ export const NavItems = [
             {
                 label: "Residential Electrical Repairs",
                 link: "/services/patTest",
-                icon: BoltSlashIcon,
+                icon: Bolt,
             },
             {
                 label: "Commercial  Electrical Repairs",
                 link: "/services/ElectricalSafetyCertificates",
-                icon: BoltIcon,
+                icon: Bolt,
 
             },
 
             {
                 label: "Outdoor Lighting and Heating",
                 link: "/services/OutdoorLightingAndHeating",
-                icon: BoltIcon,
+                icon: Bolt,
             },
 
             {
                 label: "Electric Vehicle Charging Installation",
                 link: "/services/ElectricVehicleChargingInstallation",
-                icon: BoltIcon,
+                icon: Bolt,
 
             },
             {
                 label: "Air Conditioning Installation & Services",
                 link: "/services/AirConServices",
-                BoltIcon,
+                Bolt,
             },
             {
                 label: "Flood damage",
                 link: "/services//FloodDamage",
-                BoltIcon,
+                Bolt,
             },
 
         ]
     },
     {
         label: "Contact us",
-        icon: HomeIcon,
+        icon: CircleUserRound,
         link: "/contact",
     }
 
