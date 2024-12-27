@@ -30,7 +30,7 @@ export default function MobileNav({ closeSideMenu }: MobileNavProps) {
         {isSideMenuOpen && (
           <div className="flex flex-col p-4 bg-white rounded-lg text-[1.1rem] gap-2 transition-all mb-16">
             {NavItems.map((item, index) => (
-              <SingleNavItem key={index} label={item.label} icon={item.icon} link={item.link} className="text-yellow-800">
+              <SingleNavItem key={index} label={item.label} link={item.link} className="text-yellow-800">
                 {item.children}
               </SingleNavItem>
             ))}

@@ -64,7 +64,7 @@ const ElectricalSafetyCertificate: React.FC = () => {
                 <h3 className="text-2xl font-semibold mb-4">Landlords Electrical Certificate/Report</h3>
                 <div className="space-y-4">
                     <p className="text-[20px]">
-                        It is the Landlord's responsibility to ensure that the electrical installation and appliances provided by the landlord in the property are safe at the start of the tenancy and are in proper working order throughout the tenancy.
+                        It is the Landlord&apos;s responsibility to ensure that the electrical installation and appliances provided by the landlord in the property are safe at the start of the tenancy and are in proper working order throughout the tenancy.
                     </p>
                     <p className="text-[20px]">
                         The Electrical Safety Council now recommends in their latest Guidance for rented accommodation that period inspections/tests are carried out by a qualified electrician at least every 5 years or on a change of tenancy.
@@ -92,13 +92,13 @@ const ElectricalSafetyCertificate: React.FC = () => {
                     <li>
                         <a href="https://www.electricalsafetyfirst.org.uk/guidance/guides-and-advice/landlords-guide-to-electrical-safety/"
                             className="text-blue-600 hover:text-blue-800 flex items-center">
-                            <span className="mr-2">→</span> The Landlords' Guide to Electrical Safety
+                            <span className="mr-2">→</span> The Landlords&apos; Guide to Electrical Safety
                         </a>
                     </li>
                     <li>
                         <a href="https://www.rla.org.uk/landlord/guides/electrical-safety.shtml"
                             className="text-blue-600 hover:text-blue-800 flex items-center">
-                            <span className="mr-2">→</span> Landlord Electrical Safety Certificates & Inspections frequency
+                            <span className="mr-2">→</span> Landlord Electrical Safety Certificates &amp; Inspections frequency
                         </a>
                     </li>
                 </ul>

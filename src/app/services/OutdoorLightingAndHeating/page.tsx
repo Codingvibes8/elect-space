@@ -65,7 +65,7 @@ const OutdoorLightingAndHeating: React.FC = () => {
                         <h2 className="text-2xl font-semibold">Security Lights</h2>
                     </div>
                     <p className="text-lg mb-4">
-                        Enhance your property's security with professional lighting installation. Our security lighting solutions include:
+                        Enhance your property&apos;s security with professional lighting installation. Our security lighting solutions include:
                     </p>
                     <ul className="space-y-3">
                         <li className="flex items-center text-lg text-gray-700">
@@ -94,9 +94,7 @@ const OutdoorLightingAndHeating: React.FC = () => {
                         <h2 className="text-2xl font-semibold">Outdoor Heating Solutions</h2>
                     </div>
                     <p className="text-lg mb-6">
-                        Use your external space all year round with outdoor electric heaters. Electric James will advise and
-                        install an outdoor heating element safely and securely for your London garden, balcony, terrace or
-                        patio.
+                        Don&apos;t let the weather stop you from enjoying your outdoor space. Electric James will advise and install an outdoor heating element safely and securely for your London garden, balcony, terrace or patio.
                     </p>
                     <div className="bg-white p-6 rounded-lg shadow-sm">
                         <h3 className="text-xl font-semibold mb-4">Perfect for:</h3>

@@ -1,9 +1,5 @@
-
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-
-
 
 const AirConditioningServices = () => {
     return (
@@ -23,7 +19,7 @@ const AirConditioningServices = () => {
                 {/* Introduction */}
                 <div className="prose">
                     <p className="text-[20px] text-gray-600 px-10">
-                        Whether you want a comfortable home, a bustling restaurant or a professional office space,<br />s Electric James has the skills, experience and qualifications to provide the perfect climate-controlled air conditioning solution – meeting the Government's stringent safety and quality standards.
+                        Whether you want a comfortable home, a bustling restaurant or a professional office space, Electric James has the skills, experience and qualifications to provide the perfect climate-controlled air conditioning solution – meeting the Government&apos;s stringent safety and quality standards.
                     </p>
                 </div>
 
@@ -70,7 +66,7 @@ const AirConditioningServices = () => {
                 <div className="bg-gray-50 p-8 rounded-lg">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-4">F-Gas Qualification</h2>
                     <p className="text-gray-600 mb-4 text-[20px]">
-                        In the UK, air conditioning contractors must legally complete an F-Gas and ODS Regulation qualification. It is against the law to work with F-Gas if you don't have the correct certification.
+                        In the UK, air conditioning contractors must legally complete an F-Gas and ODS Regulation qualification. It is against the law to work with F-Gas if you don&apos;t have the correct certification.
                     </p>
                     <p className="text-gray-600 text-[20px]">
                         Certified engineers are qualified to undertake leak checking, recovery, installation, servicing and maintenance of equipment containing F-Gas refrigerants.
@@ -81,7 +77,7 @@ const AirConditioningServices = () => {
                 <div className="text-center bg-blue-50 p-8 rounded-lg">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-4">Get Your Free Air Conditioning Services Quote</h2>
                     <p className="text-gray-600 mb-6 text-[20px]">
-                        Contact us today to discuss your air conditioning needs. Whether it's an installation, servicing, or repair; we're here to provide top-notch reliable services to homes and businesses in North West London.
+                        Contact us today to discuss your air conditioning needs. Whether it&apos;s an installation, servicing, or repair; we&apos;re here to provide top-notch reliable services to homes and businesses in North West London.
                     </p>
                     <div className="space-y-2">
                         <p className="text-lg font-medium">

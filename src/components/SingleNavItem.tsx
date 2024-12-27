@@ -5,12 +5,11 @@ import { IoIosArrowDown } from "react-icons/io";
 interface NavItem {
     label: string;
     link?: string;
-    icon?: React.ComponentType;
     children?: NavItem[];
     className?: string;
 }
 
-export function SingleNavItem({ label, link, icon, children, className }: NavItem) {
+export function SingleNavItem({ label, link, children, className }: NavItem) {
     const [isItemOpen, setItem] = useState(false);
     const toggleItem = () => setItem(!isItemOpen);
 
@@ -39,11 +38,6 @@ export function SingleNavItem({ label, link, icon, children, className }: NavIte
                             href={ch.link ?? "#"}
                             className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-neutral-400 hover:text-black"
                         >
-                            {ch.icon && (
-                                <span className="h-6 w-6">
-                                    <ch.icon />
-                                </span>
-                            )}
                             <span className="whitespace-nowrap pl-3">{ch.label}</span>
                         </Link>
                     ))}
