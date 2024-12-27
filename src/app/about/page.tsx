@@ -3,8 +3,8 @@ import {AboutServices} from "@/app/about/AboutServices";
 
 const About = () => {
     return (
-        <section className="bg-gray-100 py-12 max-w-[1536px] mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">About Us</h2>
+        <section className="bg-gray-300 py-12 max-w-[1536px] mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold mb-10 text-center">About Us</h2>
             <div className={'px-10'}>
                 <div className={'flex flex-col md:flex-row items-center justify-center gap-2'}>
                     <div className={'w-full sm:w-1/2 mx-auto'}>

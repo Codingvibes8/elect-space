@@ -1,4 +1,4 @@
-import {HousePlus, Bolt, ContactRound, CircleUserRound} from "lucide-react";
+import { HousePlus, Bolt, ContactRound, CircleUserRound } from "lucide-react";
 
 
 export const NavItems = [
@@ -16,13 +16,9 @@ export const NavItems = [
         label: "Services",
         link: "/services",
         children: [
+
             {
-                label: "Residential Electrical Repairs",
-                link: "/services/patTest",
-                icon: Bolt,
-            },
-            {
-                label: "Commercial  Electrical Repairs",
+                label: "Electrical Safety Certificates",
                 link: "/services/ElectricalSafetyCertificates",
                 icon: Bolt,
 
@@ -47,7 +43,12 @@ export const NavItems = [
             },
             {
                 label: "Flood damage",
-                link: "/services//FloodDamage",
+                link: "/services/FloodDamage",
+                Bolt,
+            },
+            {
+                label: "PAT TESTING",
+                link: "/services/PatTest",
                 Bolt,
             },
 

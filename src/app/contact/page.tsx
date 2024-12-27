@@ -5,7 +5,7 @@ const ContactSection = () => {
     return (
         <section className="bg-gray-300 py-12 mb-12 max-w-[1536px] mx-auto">
             <div className="w-full mx-auto px-4 text-center">
-                <h2 className="text-3xl font-bold mb-8">Contact</h2>
+                <h2 className="text-4xl md:text-6xl font-bold mb-10 text-center">Contact</h2>
                 <h3 className="text-2xl mb-6">James O’Neill Trading as Electric James</h3>
                 <address>Galsworthy Road Cricklewood London NW2 2SH</address>
                 <p className="text-xl text-black mb-4">020 3662 3589 or 078 2544 7057 hello@electricjames.com</p>
