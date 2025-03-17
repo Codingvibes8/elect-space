@@ -31,12 +31,7 @@ const Hero = () => {
                         <span className="text-white font-bold">info@electrijames.com</span>
                     </div>
 
-                    <div className="flex items-center gap-4">
-                        <Image src='/img.png' alt='' width={60} height={60}
-                               className='w-40 h-40 p-4 rounded-full'/>
-                        <Image src='/img_1.png' alt='' width={60} height={60}
-                               className='w-40 h-40'/>
-                    </div>
+
                     <div className="text-2xl mt-10">
                         <Link href={'/services'}
                               className="transition-colors bg-blue-900 hover:bg-blue-700 text-white px-6 py-2 mt-4 rounded-md flex mb-6 items-center justify-center">
